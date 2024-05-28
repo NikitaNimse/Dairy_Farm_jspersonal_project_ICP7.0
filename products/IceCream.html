@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <!--font awesome link-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./../css/index.css">
+    <link rel="stylesheet" href="./../css/pro.css">
+   
+   
+</head>
+
+<body id="body">
+    <!-- Navbar -->
+    <header>
+      <div class="nav-bar">
+          <nav class="navbar navbar-expand-lg nav ">
+              <div class="container-fluid ms-3 ps-3 ">
+                  <a class="navbar-brand brand-logo " href="#">
+                      <img src="./../images/logo2.png" alt="Bootstrap" class="brand-img" width="65">
+                    </a>
+                <a class="navbar-brand txt ms-0" href="#" style="color: black; text-align:center;">Dairy<br/> Farm</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link txt ps-5" aria-current="page" href="./../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link txt ps-5" href="./Pages/about_us.html">AboutUs</a>
+                    </li>
+                    <li class="nav-item dropdown  ps-5">
+                      <a class="nav-link txt dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./Pages/sessions.html/Java.html" target="_blank" onclick="confirm('Do you want to Buy Milk Product?')">Milk Product</a></li>
+                        <li><a class="dropdown-item" href="./Pages/sessions.html/CLanguage.html" target="_blank"  onclick="confirm('Do you want to Buy ice-cream?')">Ice_Cream</a></li>
+                        <li><a class="dropdown-item" href="./Pages/sessions.html/CPP.html" target="_blank" onclick="confirm('Do you want to Buy Sweet?')">Sweet</a></li>
+                          <li><a class="dropdown-item" href="./Pages/sessions.html/Data_Analytics.html" target="_blank" onclick="confirm('Do you want to start Data Analytics quiz?')">   </a></li>
+                          <li><a class="dropdown-item" href="./Pages/sessions.html/html,css,js_page1.html" target="_blank"  onclick="confirm('Do you want to start HTML,CSS & JS quiz?')">HTML,CSS & JS</a></li>
+                          <li><a class="dropdown-item" href="./Pages/sessions.html/Python.html" target="_blank"  onclick="confirm('Do you want to start Python Programming quiz?')">Python Programming</a></li>
+                          <li><a class="dropdown-item" href="./Pages/sessions.html/Powerbi.html" target="_blank"  onclick="confirm('Do you want to start Power Bi quiz?')">Power Bi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link txt ps-5" href="./Pages/login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link txt  ps-5 pe-4" href="./Pages/feedback.html">Feedback</a>
+                    </li>
+                  </ul>
+                <div class="container-fluid">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                  </form>
+                </div>
+                <div class="container-fluid  ">
+                  <img src="./../images/dark-mode (2).png" class="theme-icon ms-3" id="img-dark" onclick="darkMode()" />
+                  <img src="./../images/light-mode (1).png" class="theme-icon ms-3" id="img-light" onclick="lightMode()" />
+                </div>
+              </div>
+            </div>
+            </nav>
+         </div>
+  </header>
+    <!-- Nav-Bar End --> 
+
+
+
+
+    <script src="./../js/script.js"></script>
+    <script src="./../js/index.js"></script>
+    <script src="./../js/IceCream.js"></script>
+
+    <!-- Homepage content start-->
+    <div class="logo-heading">
+      <img src="./../images/logo2.png" alt="Bootstrap" class="brand-img" width="65">
+  
+     
+       <h1 class="heading">Shetkari Dairy Farm</h1>
+      </div>
+   </div>   
+  
+   <!--<div id="clock" >  </div>-->
+      
+     <div class="heading">
+    <p> "Growing Dreams, Harvesting Success"</p>
+   </div>
+  
+  
+   <div>
+  
+<h1 class="heading">Ice_Cream</h1>
+  <div class="row ">
+
+  
+    <div class="product-card">
+        <img src=".\..\images\amul-realmilk-ice-cream.jpg" class="img"/>
+      <div class="card-body">
+        <h1 > cup Ice_Cream </h1>
+        <p class="desc">  This is delicious cup ice cream.<br>
+        all flavours are.</p>
+        <p class="price" id="price">₹30 </p>
+        <p>
+        <p id="show-quantity4">1 * 30 </p>
+        
+        <p id="show-total4"> total:30</p>
+
+
+        <div class="quantity-container"> 
+            
+            <img src=".\..\images\minus.png"class="btn-Qnty" onclick="Dec4()"/> 
+            <span class="qnty-text" id="qnty-text4">  1    </span>
+            <img src=".\..\images\plus.png" class="btn-Qnty" onclick="Inc4()" />
+            
+        </div>
+          <button  type="button"class="btn">Buy Now</button>
+      </div>
+     </div>
+
+
+
+
+     <div class="product-card">
+        <img src=".\..\images\cone.png" class="img"/>
+      <div class="card-body">
+        <h1 > Cone</h1>
+        <p class="desc">  This sandal is very confortable for walking.<br>
+        It Improve Your Stylish Personality.</p>
+        <p class="price" id="price">₹60 </p>
+        <p>
+        <p id="show-quantity5">1 * 60 </p>
+        
+        <p id="show-total5"> total:60</p>
+
+
+        <div class="quantity-container"> 
+            
+            <img src=".\..\images\minus.png "class="btn-Qnty" onclick="Dec5()"/> 
+            <span class="qnty-text" id="qnty-text5">  1    </span>
+            <img src=" .\..\images\plus.png" class="btn-Qnty" onclick="Inc5()" />
+            
+        </div>
+          <button  type="button"class="btn">Buy Now</button>
+      </div>
+     </div>
+
+
+
+
+     <div class="product-card">
+        <img src=".\..\images\chokobar.webp" class="img"/>
+      <div class="card-body">
+        <h1 > chokobar </h1>
+        <p class="desc">  This sandal is very confortable for walking.<br>
+        It Improve Your Stylish Personality.</p>
+        <p class="price" id="price">₹20 </p>
+        <p>
+        <p id="show-quantity6">1 * 20 </p>
+        
+        <p id="show-total6"> total:20</p>
+
+
+        <div class="quantity-container"> 
+            
+            <img src=".\..\images\minus.png "class="btn-Qnty" onclick="Dec6()"/> 
+            <span class="qnty-text" id="qnty-text6">  1    </span>
+            <img src=".\..\images\plus.png" class="btn-Qnty" onclick="Inc6()" />
+            
+        </div>
+          <button  type="button"class="btn">Buy Now</button>
+      </div>
+     </div>
+
+
+
+
+
+
+
+  
+   
+    
+    
+    
+     
+      
+    </div>
+
+
+
+     <!--footer-->
+   <div class=" ~ text-light p-4   footer-content" >
+    <div class="row">
+        <div class="col-lg-3 my-auto">
+            <img class="d-block" src="./../images/logo2.png" width="100px">
+            <p class="pt-3">Get in Touch with us:</p>
+            <div>
+                <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp fs-2 p-2 pt-0"
+                        style="color:black;"></i></a>
+              
+               <a href="https://www.instagram.com/xyz5/"><i class="fa-brands fa-instagram fs-2 p-2 pt-0"
+                        style="color: #ffffff;"></i></a>
+          
+                <a href="mailto:nimsenikita710@gmail.com"><i class="fa-regular fa-envelope fs-2 p-2 pt-0"
+                        style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-4 my-auto">
+            <p> </p>
+        </div>
+        <div class="col-lg-2">
+            <p class="fs-4"><u>Important links:</u></p>
+            <ul>
+                <li><a href="./index.html" class="text-decoration-none text-light">Home</a></li>
+                <li><a href="./Pages/about_us.html" class="text-decoration-none text-light">About</a></li>
+                <li><a href="./Pages/subject.html" class="text-decoration-none text-light">Subject</a></li>
+                <li><a href="./Pages/feedback.html" class="text-decoration-none text-light">Feedback</a></li>
+            </ul>
+        </div>
+
+        <div class="col-lg-3 d-flex flex-column">
+            <a><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                302,Near Bus stand,tilak Road,Nagar-414001</a>
+            <br />
+            <a href="tel:9356341016" class="text-decoration-none text-light"><i class="fa-solid fa-phone"
+                    style="color: #ffffff;"></i> +91 9356341016</a>
+            <br />
+            <a href="tel:9764141077" class="text-decoration-none text-light "><i class="fa-solid fa-phone"
+                    style="color: #ffffff;"></i> +91 9764141077</a><br />
+            <a href="mailto:nimsenikita710@gmail.com" class="text-decoration-none text-light"><i
+                    class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                    nimsenikita710@gmail.com</a>
+        </div>
+    </div>
+    
+    <p class="text-center">Develope by <a href="index.html" class="link-warning text-decoration-none"></a> Nimse Nikita</p>
+</div>
+<!--end of footer-->
+<script src="https://kit.fontawesome.com/14a1a7dd00.js" crossorigin="anonymous"></script>
+</body>
+</html>
